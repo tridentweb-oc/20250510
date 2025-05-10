@@ -1,0 +1,130 @@
+/* ---------------------------------------------
+  File: common.css
+  Description: サイト全体で共通して使うスタイルを定義。
+  Author: 町野
+  Last Updated: 2025-04-25
+  note: 上部に⭐️変更可能部分、下部に変更不可部分が書いてあります。
+        こちらはベースなので、スタッフ以外基本的には触らないでください。
+        変更した際は、gitのコミットメッセージお願いします。
+---------------------------------------------- */
+
+@charset "utf-8";
+
+/* ⭐️背景色（変更可能） */
+body {
+  background-color: #fff;
+}
+
+/*⭐️音楽プレイヤー　色等　（変更可能） */
+.main-wrap {
+  border: #000 1px solid;
+}
+
+/*⭐️btn （変更可能） */
+.play {
+  border: 1px #000 solid;
+}
+
+.pause {
+  border: 1px #000 solid;
+}
+
+/* ------------------------以下変更不可部分----------------------------------------------- */
+/* スクロール制御（変更不可） */
+#body {
+  overflow: hidden;
+}
+
+/*音楽プレイヤー配置 （変更不可） */
+#main-wrap {
+  width: 400px;
+  height: 732px;
+  margin-inline: auto;
+  padding: 20px;
+}
+
+/* タイトル配置　（変更不可） */
+#header {
+  padding: 30px;
+  text-align: center;
+}
+
+/* btn　（変更不可） */
+#button-wrap {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 0 20px;
+}
+
+#play {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pause {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 画像配置処理　変更不可 */
+#disk-wrap {
+  position: relative;
+  width: 358px;
+  height: 358px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* オーディオヴィジュアライザー　変更不可 */
+#visualizer-wrap {
+  position: relative;
+  width: 358px;
+  height: auto;
+}
+
+#visualizer {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* コピーライト（変更不可） */
+small {
+  display: block;
+  text-align: right;
+}
+
+footer {
+  position: fixed;
+  bottom: 0; /* 画面下部に配置 */
+  left: 0;
+  width: 100%; /* 画面幅いっぱいに広げる */
+  text-align: center; /* 中央揃え */
+  background-color: rgba(0, 0, 0, 0.7); /* 半透明の背景色 */
+  color: #fff; /* 白い文字 */
+  padding: 10px 0; /* 上下に余白 */
+  font-size: 14px; /* フォントサイズ */
+}
